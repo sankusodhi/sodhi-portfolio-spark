@@ -1,6 +1,7 @@
 
 import React from "react";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const HeroSection = () => {
   return (
@@ -44,10 +45,16 @@ const HeroSection = () => {
             <div className="relative w-64 h-64 md:w-80 md:h-80">
               <div className="absolute inset-0 rounded-full bg-gradient-to-br from-purple-light to-purple-dark opacity-70 blur-xl animate-pulse-slow"></div>
               <div className="absolute inset-0 glass-card rounded-full overflow-hidden border-4 border-white/10">
-                {/* Placeholder for profile image - replace with actual image */}
-                <div className="w-full h-full bg-gradient-to-br from-purple-light/40 to-purple-dark/40 flex items-center justify-center text-3xl font-bold">
-                  SR
-                </div>
+                <Avatar className="w-full h-full">
+                  <AvatarImage 
+                    src="/home/sanku-sodhi/Downloads/WhatsApp Image 2025-04-10 at 11.44.12 AM.jpeg" 
+                    alt="Sanku Ram Sodhi" 
+                    className="object-cover w-full h-full"
+                  />
+                  <AvatarFallback className="w-full h-full bg-gradient-to-br from-purple-light/40 to-purple-dark/40 flex items-center justify-center text-3xl font-bold">
+                    SR
+                  </AvatarFallback>
+                </Avatar>
               </div>
             </div>
           </div>
