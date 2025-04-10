@@ -1,6 +1,5 @@
-
 import React from "react";
-import { Code, Database, Layout, Server, Tool, Cpu, Monitor } from "lucide-react";
+import { Code, Database, Layout, Server, Wrench, Cpu, Monitor } from "lucide-react";
 
 const SkillsSection = () => {
   const skills = {
@@ -86,7 +85,7 @@ const SkillsSection = () => {
           <SkillCard title="Backend" skills={skills.backend} icon={Server} />
           <SkillCard title="Frameworks" skills={skills.frameworks} icon={Code} />
           <SkillCard title="Database" skills={skills.database} icon={Database} />
-          <SkillCard title="Tools" skills={skills.tools} icon={Tool} />
+          <SkillCard title="Tools" skills={skills.tools} icon={Wrench} />
           <SkillCard title="Other" skills={skills.other} icon={Monitor} />
         </div>
         
